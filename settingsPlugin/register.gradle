@@ -1,0 +1,14 @@
+plugins {
+    id 'java-gradle-plugin'
+}
+
+gradlePlugin {
+    plugins {
+        greeting {
+            // 插件id
+            id = 'settings-plugin'
+            // 插件实现类
+            implementationClass = 'site.zhangpan.s'
+        }
+    }
+}

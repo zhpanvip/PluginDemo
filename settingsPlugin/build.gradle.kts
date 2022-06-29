@@ -1,15 +1,11 @@
 plugins {
-    id("java-library")
-    id("org.jetbrains.kotlin.jvm")
+    id("groovy")
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+dependencies {
+    //Groovy DSL
+    implementation(gradleApi())
+    //Gradle DSL
+    implementation(localGroovy())
 }
-
-
-
-
-
 
