@@ -59,7 +59,7 @@ class AndroidPluginTest : Plugin<Project> {
         
         println("build dir:${project.buildDir}")
         println("build file:${project.buildFile}")
-    
+        
         // 修改 app project 的配置
         project.rootProject.project("app") {
             project.configurations.all {
@@ -72,8 +72,6 @@ class AndroidPluginTest : Plugin<Project> {
         }
         
         // -------------------------Project 常用属性 END-------------------------
-        
-
         
         // -------------------------Project Plugins START-------------------------
         
@@ -93,7 +91,6 @@ class AndroidPluginTest : Plugin<Project> {
         
         // -------------------------Project Plugins END-------------------------
         
-        
         // -------------------------Project gradle START-------------------------
         println("gradle version:${project.gradle.gradleVersion}")
         // 获取gradle执行的任务，例如clean/rebuild/assembleXXX
@@ -104,19 +101,21 @@ class AndroidPluginTest : Plugin<Project> {
         }
         // -------------------------Project Plugins END-------------------------
         
-        
         // -------------------------Project TASK START-------------------------
         // 注册一个task
         project.tasks.register("testPlugin") {
+            this.doFirst {
+                println("TestPlugin Start")
+            }
+            
             this.doLast {
-                println("Hello testPlugin")
+                println("testPlugin End")
             }
         }
         project.tasks.forEach {
             println("task name:${it.name}")
         }
         // -------------------------Project TASK END-------------------------
-        
         
         // -------------------------Project Extension START-------------------------
         

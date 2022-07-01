@@ -1,4 +1,4 @@
-package com.upuphone.core.plugindemo
+package site.zhangpan.demo.plugin
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

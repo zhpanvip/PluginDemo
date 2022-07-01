@@ -1,8 +1,8 @@
-package com.upuphone.core.plugindemo
+package site.zhangpan.demo.plugin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.zhpan.bannerview.BannerViewPager
+import com.upuphone.core.plugindemo.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

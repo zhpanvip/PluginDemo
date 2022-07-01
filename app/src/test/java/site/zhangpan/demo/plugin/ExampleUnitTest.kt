@@ -1,4 +1,4 @@
-package com.upuphone.core.plugindemo
+package site.zhangpan.demo.plugin
 
 import org.junit.Test
 

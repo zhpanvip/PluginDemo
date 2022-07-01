@@ -21,7 +21,7 @@ repositories {
 }
 dependencies {
 //    compileOnly("com.android.tools.build:gradle:7.2.0")
-    implementation("com.android.tools.build:gradle-api:7.2.0")
-    implementation(kotlin("stdlib"))
+//     implementation("com.android.tools.build:gradle-api:7.2.0")
+//     implementation(kotlin("stdlib"))
     gradleApi()
 }
